@@ -28,4 +28,18 @@ public class Vetor {
 			return false;
 		}
 	}
+	
+	public boolean remover(int pos) {
+		if(pos >= 0 && pos < cont) {
+			for(int i = pos; i < cont - i; i++) {
+				alunos[i] = alunos[i+1];
+			}
+			alunos[cont] = null;
+			cont --;
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }
