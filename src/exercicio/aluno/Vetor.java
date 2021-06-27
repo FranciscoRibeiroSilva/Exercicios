@@ -42,4 +42,10 @@ public class Vetor {
 			return false;
 		}
 	}
+	
+	public void getLista() {
+		for(int i = 0; i < cont; i++) {
+			System.out.println(alunos[i]);
+		}
+	}
 }
