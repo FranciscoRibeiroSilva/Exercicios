@@ -15,8 +15,17 @@ public class Vetor {
 			cont ++;
 			return true;
 		}
-		return false;
+		else {
+			return false;
+		}
 	}
 	
-	
+	public boolean buscar(int pos) {
+		if (pos >= 0 && pos < cont) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }
