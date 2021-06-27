@@ -9,5 +9,14 @@ public class Vetor {
 		this.cont = 0;
 	}
 	
+	public boolean adiciona(Aluno aluno) {
+		if(cont < 15) {
+			alunos[cont] = aluno;
+			cont ++;
+			return true;
+		}
+		return false;
+	}
+	
 	
 }
