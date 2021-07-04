@@ -20,12 +20,12 @@ public class Vetor {
 		}
 	}
 	
-	public boolean buscar(int pos) {
+	public Aluno buscar(int pos) {
 		if (pos >= 0 && pos < cont) {
-			return true;
+			return alunos[pos];
 		}
 		else {
-			return false;
+			return null;
 		}
 	}
 	

@@ -13,6 +13,10 @@ public class GestaoAlunos {
 		lista.adiciona(m2);
 		lista.adiciona(m3);
 		
+		lista.buscar(3);
+		lista.remover(3);
+		
+		
 	}
 
 }
