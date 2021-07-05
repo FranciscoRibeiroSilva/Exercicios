@@ -13,7 +13,29 @@ public class CarrosList {
 	
 	public static void main(String[] args) {
 		
-		
+		boolean executar = true;
+		while(executar) {
+			exibirMenu();
+			int opcao;
+		}
+	}
+	
+	private static void exibirMenu() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("RESGISTRO AUTOMOTIVO\n");
+		sb.append("1. Listar carros\n");
+		sb.append("2. Adicionar carro\n");
+		sb.append("3. Alterar dados de veiculo\n");
+		sb.append("4. Buscar veiculo\n");
+		sb.append("5. Remover carro\n");
+		sb.append("0. Encerrar\n");
+		System.out.println(sb.toString());
+	}
+	
+	private static int capturaOpcao();{
+		System.out.println("O que quer fazer?");
+		int opcao = Integer.parseInt(sc.nextLine());
+		return opcao;
 	}
 	
 	private static Carro criarCarro() {
@@ -56,15 +78,22 @@ public class CarrosList {
 	}
 	
 	private static void listarCarros() {
+
 		if(carros.isEmpty()) {
 			System.out.println("Nenhum carro registrado!");
 		}
 		else {
 			int pos = 0;
 			for(Carro a : carros) {
-				System.out.println("Modelo: "+a.getModelo()+"\nMontadora: "+a.getMontadora()+"\nCor: "+a.getCor()+"\nCavalos: "+a.getCavalos()+"\nVelocidade Maxima: "+a.getVelocidadeMax()+"\n________________________");
+				System.out.println(pos+"\nModelo: "+a.getModelo()+"\nMontadora: "+a.getMontadora()+"\nCor: "+a.getCor()+"\nCavalos: "+a.getCavalos()+"\nVelocidade Maxima: "+a.getVelocidadeMax()+"\n________________________");
 				pos++;
 			}
 		}
+	}
+
+	private static void removerCarro() {
+		System.out.println("Qual carro deseja remover?");
+		int pos = Integer.parseInt(sc.next());
+		carros.remove(pos);
 	}
 }
