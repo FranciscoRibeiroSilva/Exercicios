@@ -5,7 +5,11 @@ public class Carro {
 	private double cavalos, velocidadeMax;
 	
 	public Carro (String modelo, String montadora, String cor, double cavalos, double velocidadeMax) {
-		
+		setModelo(modelo);
+		setMontadora(montadora);
+		setCor(cor);
+		setCavalos(cavalos);
+		setVelocidadeMax(velocidadeMax);
 	}
 	
 	public String getModelo() {
