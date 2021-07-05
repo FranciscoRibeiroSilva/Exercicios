@@ -34,7 +34,6 @@ public class CarrosList {
 			case 4:
 			case 5:
 				listarCarros();
-				System.out.println("Qual veiculo deseja remover? ");
 				removerCarro();
 				break;
 			case 0:
@@ -59,7 +58,7 @@ public class CarrosList {
 	
 	private static int capturaOpcao(){
 		System.out.println("O que quer fazer?");
-		int opcao = Integer.parseInt(sc.nextLine());
+		int opcao = Integer.parseInt(sc.next());
 		return opcao;
 	}
 	
