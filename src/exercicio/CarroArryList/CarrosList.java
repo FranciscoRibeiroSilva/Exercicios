@@ -32,6 +32,12 @@ public class CarrosList {
 				alterarCarro(pos);
 				break;
 			case 4:
+				int posSelec;
+				posSelec = capturaOpcao();
+				Carro buscado;
+				buscado = carros.get(posSelec);
+				break;banco e casse tempo, crc
+				
 			case 5:
 				listarCarros();
 				removerCarro();
